@@ -8,6 +8,10 @@ doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
 doubleChar("1234!_ ") ==> "11223344!!__  "
 */
 
-function doubleChar(str) {
-  // Your code here
+const doubleChar = (str) => {
+  let string = '';
+  for(let i = 0; i < str.length; i++) {
+    string += (str[i] + str[i]);
+  }
+  return string;
 }
